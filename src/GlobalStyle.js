@@ -121,7 +121,7 @@ ${"" /* resuable code section  */}
      .intro-data {
       margin-bottom: 0;
       text-transform: uppercase;
-      color: #5138ee;
+      color: #BB90DB;
     }
 
    .caption {
@@ -167,8 +167,7 @@ input, textarea{
    @media (max-width: ${({ theme }) => theme.media.mobile}) {
        html {
       font-size: 50%;
-    }
-
+    }  
 .grid{
   gap: 3.2rem;
 }
