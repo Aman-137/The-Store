@@ -8,7 +8,7 @@ const Header = () => {
     <MainHeader>
       <NavLink to="/">
         <img
-          src="./images/store.jpg"
+          src="/images/store.jpg"
           alt="my logo img"
           // width="500"
           height="100"
