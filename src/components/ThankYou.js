@@ -2,20 +2,20 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 import { useNavigate } from "react-router-dom";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import animationData from "../thanku.json";
 
 const ThankYou = () => {
   const navigate = useNavigate();
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const defaultOptions = {
+  //   loop: true,
+  //   autoplay: true,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
 
   const handleClick = () => {
     navigate("/products");
@@ -23,7 +23,12 @@ const ThankYou = () => {
 
   return (
     <Container>
-      <Lottie options={defaultOptions} height={300} width={300} />
+      <Lottie
+        animationData={animationData}
+        loop
+        autoplay
+        style={{ height: 300, width: 300 }}
+      />
       <h1>Thank You for Your Purchase!</h1>
       <p>Your payment was successful.</p>
       <Button onClick={handleClick}>Go Back to Shopping</Button>
