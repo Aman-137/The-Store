@@ -14,9 +14,9 @@ const Footer = () => {
             <h3>Talk to us today</h3>
           </div>
           <div>
-            <Button>
+            <div className="get-started">
               <NavLink to="/contact">Get Started</NavLink>
-            </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -134,6 +134,36 @@ const Wrapper = styled.section`
     .grid div:last-child {
       justify-self: end;
       align-self: center;
+    }
+
+    .get-started {
+      text-decoration: none;
+      max-width: auto;
+      background-color: #bb90db;
+      border-radius: 8px;
+      color: rgb(0 0 0);
+      padding: 1.4rem 2.4rem;
+      border: none;
+      text-transform: uppercase;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+
+      &:hover,
+      &:active {
+        box-shadow: 0 2rem 2rem 0 rgb(132 144 255 / 30%);
+        box-shadow: ${({ theme }) => theme.colors.shadowSupport};
+        transform: scale(0.96);
+      }
+
+      a {
+        text-decoration: none;
+        color: rgb(0 0 0);
+        font-size: 1.8rem;
+      }
     }
   }
 

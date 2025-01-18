@@ -27,7 +27,7 @@ const FeatureProduct = () => {
 
 const Wrapper = styled.section`
   padding: 9rem 0;
-  background-color: ${({ theme }) => theme.colors.bg};
+  background-color: #c6acd9;
 
   .container {
     max-width: 120rem;
@@ -71,7 +71,7 @@ const Wrapper = styled.section`
       right: 10%;
       text-transform: uppercase;
       background-color: ${({ theme }) => theme.colors.bg};
-      color: ${({ theme }) => theme.colors.helper};
+      color: #000000;
       padding: 0.8rem 2rem;
       font-size: 1.2rem;
       border-radius: 2rem;
@@ -103,13 +103,15 @@ const Wrapper = styled.section`
       align-items: center;
     }
 
-    h3 {
+    h1 {
       color: ${({ theme }) => theme.colors.text};
       text-transform: capitalize;
+      font-size: 20px;
+      font-weight: 600;
     }
 
     .card-data--price {
-      color: ${({ theme }) => theme.colors.helper};
+      color: #754897;
     }
 
     .btn {

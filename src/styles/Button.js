@@ -5,7 +5,7 @@ export const Button = styled.button`
   max-width: auto;
   background-color: #bb90db;
   border-radius: 8px;
-  color: rgb(255 255 255);
+  color: rgb(0 0 0);
   padding: 1.4rem 2.4rem;
   border: none;
   text-transform: uppercase;
@@ -25,7 +25,7 @@ export const Button = styled.button`
 
   a {
     text-decoration: none;
-    color: rgb(255 255 255);
+    color: rgb(0 0 0);
     font-size: 1.8rem;
   }
 `;

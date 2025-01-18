@@ -41,6 +41,9 @@ const HeroSection = ({ myData }) => {
 
 const Wrapper = styled.section`
     padding: 12rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
         min-width: 10rem;
@@ -59,6 +62,7 @@ const Wrapper = styled.section`
 
         .intro-data {
             margin-bottom: 0;
+            color: #754897;
         }
     }
 

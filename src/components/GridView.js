@@ -79,9 +79,11 @@ const Wrapper = styled.section`
       color: ${({ theme }) => theme.colors.helper};
     }
 
-    h3 {
+    h1 {
       color: ${({ theme }) => theme.colors.text};
       text-transform: capitalize;
+      font-size: 20px;
+      font-weight: 600;
     }
 
     .btn {
